@@ -10,9 +10,6 @@ describe("Rendering", () => {
   it("Should render all the elements correctly", () => {
     render(<RenderInput />);
     //screen.debug();
-    //https://github.com/A11yance/aria-query#elements-to-roles
-    //screen.debug(screen.getByRole("heading"));
-    //https://jestjs.io/docs/en/expect
     expect(screen.getAllByRole("button")).toBeTruthy();
     expect(screen.getByPlaceholderText("Enter")).toBeTruthy();
     
